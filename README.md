@@ -45,6 +45,21 @@ La documentación detallada, incluyendo diagramas de arquitectura y ejemplos de 
 - AWS CLI [configurado](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html)
 - Python 3.11 o superior
 
+## Ejemplo de uso
+
+```bash
+curl 'https://ajakl77vi52z32dqiaiwvvxmvy0arqvq.lambda-url.us-west-2.on.aws/' \
+  -H 'content-type: application/json' \
+  -d '{
+    "nombre": "Juan",
+    "apellido": "Perez",
+    "correo": "juan.perez@ejemplo.com",
+    "pedido": "2x Pizza Margarita, Coca-Cola regular, Brownie",
+    "total": "648.25",
+    "direccion": "Mixtli #36, Puebla"
+  }'
+```
+
 ## 📝 Licencia
 
 Este proyecto está bajo la Licencia MIT - consulta el archivo `LICENSE` para más detalles.
